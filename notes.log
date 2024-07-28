@@ -1,0 +1,48 @@
+BOOST
+*Pages:
+-Inicio
+	-Productos populares
+	-productos recientes
+	-Reseñas
+	-Subscribe form
+-Tienda
+	-Accesorios
+	-Celulares
+	-Laptops
+	-Tablets
+	-Wearables
+	-Pasarela de pago con Stripe
+-Novedades
+
+Functions
+--Reconocimiento de velocidad de internet para muestra del sitio
+--Carga scroll de imágenes
+-INIT Loader
+-excepcionar similar mismo productId
+
+-English Version
+
+-You could add a validation check to ensure that the user enters a valid email address.
+
+X Añadir condicional si el tipo de respuesta es domiciliaria
+
+      <div className="searchForm">
+        <input
+          type="text"
+          placeholder='Buscar accesorios'
+          className="searchInput"
+        />
+      </div>
+
+
+            {formData.provincia && (
+              <select id="distrito" name="distrito" value={formData.distrito} onChange={handleInputChange}>
+                <option value="">Selecciona un distrito</option>
+                {/* Lógica para mostrar los distritos de la provincia seleccionada */}
+                {distritosPorProvincia[formData.provincia].map((distrito, index) => (
+                  <option key={index} value={distrito}>
+                    {distrito}
+                  </option>
+                ))}
+              </select>
+            )}

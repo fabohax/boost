@@ -1,0 +1,64 @@
+
+-----------------------------------------------
+
+Link publico http://rastreo.boostperu.com.pe
+
+Acceso FTP
+Host: rastreo.boostperu.com.pe
+Usuario: usrRastreoBP@rastreo.boostperu.com.pe
+Clave: hye!sWasRBPeru
+Puerto:21
+Utilizar cliente ftp FileZilla u otro
+
+******************************************
+Acceso a base de datos MySQL
+http://rastreo.boostperu.com.pe/phpMyAdmin
+Usuario: zfxprogj_usrRastreoBP
+Clave: uyesdeswASW!
+Base de datos: zfxprogj_dbRastreoBP
+
+
+https://www.boostperu.com.pe/admin
+usuario: admin
+clave: V^Bcv$sO@!EWQAq!
+
+---
+https://login.linode.com/login
+Usuario: boostperu
+Clave: BoostPer2023!#$$
+
+wordpress ip
+45.79.198.121
+
+
+----
+
+
+Para crear un inicio de sesión con Google y establecer una sesión de usuario en un proyecto Next.js, puedes seguir los siguientes pasos:
+
+1. Crea un proyecto en la Consola de Desarrolladores de Google:
+   - Ve a la [Consola de Desarrolladores de Google](https://console.developers.google.com/) y crea un nuevo proyecto.
+   - Habilita la API de Google Sign-In en tu proyecto.
+
+2. Configura las credenciales de OAuth2:
+   - En la sección "Credenciales" de la Consola de Desarrolladores de Google, crea una nueva credencial OAuth2.
+   - Establece el origen permitido para tu aplicación, que en este caso sería la URL de tu proyecto Next.js (por ejemplo, `http://localhost:3000` en desarrollo o el dominio de tu sitio en producción).
+   - Obtén el Client ID de la credencial OAuth2, ya que lo necesitarás más adelante.
+
+3. Instala las dependencias necesarias:
+   - En tu proyecto Next.js, ejecuta el siguiente comando para instalar las dependencias necesarias:
+     ```
+     npm install react-google-login
+     ```
+
+4. Crea un componente de inicio de sesión:
+   - Crea un componente en tu proyecto Next.js para el inicio de sesión con Google.
+   - Utiliza el componente `GoogleLogin` de la librería `react-google-login` para implementar el inicio de sesión con Google.
+   - Dentro del componente, maneja la respuesta del inicio de sesión exitoso y obtén el token de acceso de Google.
+
+5. Establece una sesión de usuario:
+   - Al obtener el token de acceso de Google, envíalo al backend de tu aplicación Next.js para validar el token y crear una sesión de usuario.
+   - En el backend, puedes utilizar una librería como `jsonwebtoken` para generar un token de sesión y enviarlo al cliente.
+   - Al recibir el token de sesión en el cliente, almacénalo en el almacenamiento local (`localStorage` o `sessionStorage`) para mantener la sesión del usuario.
+
+Recuerda que este es un proceso general y los detalles específicos pueden variar dependiendo de tu configuración y necesidades exactas. Es recomendable consultar la documentación de las librerías que utilices y seguir las prácticas de seguridad recomendadas al manejar sesiones de usuario.

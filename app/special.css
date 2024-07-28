@@ -1,0 +1,30 @@
+/* quantity input */
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield; /* Firefox */
+}
+
+
+.qty{
+  border:1px solid #000;
+  width:3em;
+  border-left: none;
+  border-right:none;
+}
+
+.qbtn{
+  border:1px solid #000;
+  background:#fff;
+  color:#000;
+  width:3em;
+}
+.qbtn:hover{
+  background:#000;
+  border:1px solid #000;
+  color:#fff;
+}
